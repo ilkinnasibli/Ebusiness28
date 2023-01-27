@@ -1,0 +1,14 @@
+﻿@model team
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<h1>Detail</h1><br /><br />
+
+<div class="col-4">
+	<img src="~/assets/img/team/@Model.Photo" height="100px" /><br /><br />
+	<h3>@Model.FullName </h3>
+	<h4>@Model.Job </h4>
+	
+	<a class="btn btn-info" asp-action="Index">Back</a>
+</div>

@@ -1,0 +1,38 @@
+﻿@model team
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card col-5">
+	<div class="card-body">
+		<h4 class="card-title">Create Team</h4>
+		<form class="forms-sample" method="post"  >
+
+			
+			<div class="form-group">
+				<label>Photo</label>
+				<input asp-for="Photo" class="form-control" placeholder="Photo">
+				<span class="text-danger" asp-validation-for="Photo"></span>
+			</div>
+			<div class="form-group">
+				<label>Fullname</label>
+				<input asp-for="FullName" class="form-control" placeholder="FullName">
+				<span class="text-danger" asp-validation-for="FullName"></span>
+			</div>
+
+			<div class="form-group">
+				<label>Job</label>
+				<input asp-for="Job" class="form-control" placeholder="Job">
+				<span class="text-danger" asp-validation-for="Job"></span>
+			</div>
+
+		
+
+			<button type="submit" class="btn btn-primary mr-2">Submit</button>
+			<button asp-action="Index" class="btn btn-light">Cancel</button>
+
+		</form>
+	</div>
+</div>
+
